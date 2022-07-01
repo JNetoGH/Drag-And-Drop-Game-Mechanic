@@ -43,7 +43,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\DragAndDrop.cs" />
      <Compile Include="Assets\Scripts\PosIndicatorMaker.cs" />
-     <Compile Include="Assets\Scripts\CheckPosIndicatorCollision.cs" />
+     <Compile Include="Assets\Scripts\PosIndicatorCollisionChecker.cs" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Users\joaom\Desktop\RES\Unity Editors\2021.3.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
