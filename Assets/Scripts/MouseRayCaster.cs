@@ -2,7 +2,9 @@
 
 public class MouseRayCaster
 {
-    public RaycastHit hit;
+    private RaycastHit hit;
+    public GameObject gmObjHit => hit.collider.gameObject;
+    
     public void CastNewRay()
     {
         Vector3 screenMousePosFar = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.farClipPlane);
@@ -13,6 +15,6 @@ public class MouseRayCaster
     }
     public bool HasHitTag(string tag)
     {
-        return hit.collider != null && hit.collider.CompareTag("Drag");
+        return hit.collider != null && hit.collider.CompareTag(tag);
     }
 }
