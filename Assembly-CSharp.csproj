@@ -41,9 +41,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\DragAndDropController.cs" />
+     <Compile Include="Assets\Scripts\DragAndDropManager.cs" />
      <Compile Include="Assets\Scripts\PosIndicatorMaker.cs" />
-     <Compile Include="Assets\Scripts\PosIndicatorCollisionChecker.cs" />
+     <Compile Include="Assets\Scripts\PosIndicatorController.cs" />
+     <Compile Include="Assets\Scripts\MouseRayCaster.cs" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Users\joaom\Desktop\RES\Unity Editors\2021.3.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

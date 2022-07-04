@@ -3,7 +3,7 @@ using UnityEngine;
 public class PosIndicatorMaker : MonoBehaviour
 {
     
-    /* IT NEEDS TO BE TOUCHING THE GROUND: CheckPosIndicatorCollision.cs depends on it,
+    /* IT NEEDS TO BE TOUCHING THE GROUND: PosIndicatorComtroller.cs depends on it,
      * so it cant be too high because it wont cause no collision with the ground */
     [SerializeField] private float distanceFromGround = 0.01f;
     
@@ -38,5 +38,4 @@ public class PosIndicatorMaker : MonoBehaviour
     {
         Indicate();
     }
-    
 }

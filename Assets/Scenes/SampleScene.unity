@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 274084106}
   - component: {fileID: 274084105}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Purple Cube
   m_TagString: Drag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 1078025006}
   - component: {fileID: 1078025005}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Blue Cube
   m_TagString: Drag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 1096116417}
   - component: {fileID: 1096116416}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Orange Cube
   m_TagString: Drag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -738,7 +738,7 @@ GameObject:
   - component: {fileID: 1499246736}
   - component: {fileID: 1499246735}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Yellow Cube
   m_TagString: Drag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -834,8 +834,8 @@ GameObject:
   - component: {fileID: 1913092254}
   - component: {fileID: 1913092253}
   - component: {fileID: 1913092252}
-  - component: {fileID: 1913092256}
   - component: {fileID: 1913092257}
+  - component: {fileID: 1913092256}
   m_Layer: 0
   m_Name: Drag and Drop Controller
   m_TagString: Untagged

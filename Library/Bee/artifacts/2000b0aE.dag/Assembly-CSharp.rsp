@@ -329,8 +329,9 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/DragAndDropController.cs"
-"Assets/Scripts/PosIndicatorCollisionChecker.cs"
+"Assets/Scripts/DragAndDropManager.cs"
+"Assets/Scripts/MouseRayCaster.cs"
+"Assets/Scripts/PosIndicatorController.cs"
 "Assets/Scripts/PosIndicatorMaker.cs"
 -langversion:9.0
 
