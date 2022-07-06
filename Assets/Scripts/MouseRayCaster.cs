@@ -2,7 +2,8 @@
 
 public class MouseRayCaster
 {
-    private RaycastHit hit;
+    public Ray ray;
+    public RaycastHit hit;
     public GameObject gmObjHit => hit.collider.gameObject;
     
     public void CastNewRay()
@@ -11,7 +12,12 @@ public class MouseRayCaster
         Vector3 worldMousePosFar = Camera.main.ScreenToWorldPoint(screenMousePosFar);
         Vector3 screenMousePosNear = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane);
         Vector3 worldMousePosNear = Camera.main.ScreenToWorldPoint(screenMousePosNear);
-        Physics.Raycast(worldMousePosNear, worldMousePosFar - worldMousePosNear, out hit);
+        
+        ray = new Ray();
+        ray.origin = worldMousePosNear;
+        ray.direction = worldMousePosFar - worldMousePosNear;
+        Physics.Raycast(ray, out hit);
+        Debug.DrawLine(ray.origin, ray.direction * 1000 /*line lenght*/, Color.magenta);
     }
     public bool HasHitTag(string tag)
     {

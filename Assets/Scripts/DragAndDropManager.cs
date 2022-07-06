@@ -1,3 +1,4 @@
+using Unity.Collections;
 using UnityEngine;
 
 public class DragAndDropManager : MonoBehaviour {
@@ -15,25 +16,30 @@ public class DragAndDropManager : MonoBehaviour {
     [SerializeField] private float flyingHeight = 2f;
     [SerializeField] private float droppedHeight = 0.5f;
 
+    [SerializeField] private LineRenderer _lineRenderer; // draws on game view the ray from the main camera
+
     private void Update() 
     {                                                                                           // TRIES TO ASSIGN A GM_OBJ WHEN MOUSE BTN IS CLICKED, WHEN BTN IS RELEASED, GM_OBJ IS DROPPED
         _mouseRay.CastNewRay();                                                                 // 2) creates a RaycastHit based on the mouse click to check if it has hit anything
-        if (IsObjNull && Clicked && _mouseRay.HasHitTag("Drag")) InitDrag(_mouseRay.gmObjHit);  // 3) if gmObj isn't assigned, mouse btn clicked and the ray has hit a Grag tagged gmObj: sets up things for dragging it
-        if (!IsObjNull) DragOrDrop(DragOrDropCodes.Drag);                                   // 4) if gmObj is assigned: drags it   
-        if (!IsObjNull && Released) DragOrDrop(DragOrDropCodes.Drop);                       // 4) 3) if gmObj is assigned anf mouse btn released: stops dragging and drops it
+        
+        _lineRenderer.SetPosition(1, _mouseRay.ray.direction * 1000);                // 3) draws on secondaru camara the casted ray
+
+        if (IsObjNull && Clicked && _mouseRay.HasHitTag("Drag")) InitDrag(_mouseRay.gmObjHit);  // 4) if gmObj isn't assigned, mouse btn clicked and the ray has hit a Grag tagged gmObj: sets up things for dragging it
+        if (!IsObjNull) DragOrDrop(DragOrDropCodes.Drag);                                   // 5) if gmObj is assigned: drags it   
+        if (!IsObjNull && Released) DragOrDrop(DragOrDropCodes.Drop);                       // 6) 3) if gmObj is assigned anf mouse btn released: stops dragging and drops it
     }                                                                                                
     
     private void InitDrag(GameObject gmObj)
     { 
         SelectedObj = gmObj;                           // 1) assigns the global field of the object 
-        Cursor.visible = false;                         // 2) when its dragging it makes the cursor invisible
+        Cursor.visible = false;                        // 2) when its dragging it makes the cursor invisible
         PosIndicatorMaker.Create(SelectedObj);         // 3) turns indicator on: instantiates a new one
         _previousPos = SelectedObj.transform.position; // 4) stores the initial position
     }
     
     private void EndDrag()
     {
-        SelectedObj = null;                            // 1) unassings the obj
+        SelectedObj = null;                             // 1) unassings the obj
         Cursor.visible = true;                          // 2) sets the cursor to viseble
         PosIndicatorMaker.FinishIndicator();            // 3 turns indicator off: destroys the current one
     }

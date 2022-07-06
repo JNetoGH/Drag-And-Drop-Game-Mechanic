@@ -22,21 +22,27 @@ public class PosIndicatorController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Drag"))
+        if (!DragAndDropManager.IsObjNull) // throws an exception if its null
         {
-            IsCollingWithAnotherObj = true;
-            OtherObjName = other.gameObject.name;
+            if (other.gameObject.CompareTag("Drag") && ! other.name.Equals(DragAndDropManager.SelectedObj.name))
+            {
+                IsCollingWithAnotherObj = true;
+                OtherObjName = other.gameObject.name;
+            }
+            if (other.gameObject.CompareTag("Ground")) IsHittingTheGround = true;   
         }
-        if (other.gameObject.CompareTag("Ground")) IsHittingTheGround = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Drag")) IsCollingWithAnotherObj = false;
-        if (other.gameObject.CompareTag("Ground")) IsHittingTheGround = false;
+        if (!DragAndDropManager.IsObjNull) // throws an exception if its null
+        {
+            if (other.gameObject.CompareTag("Drag")) IsCollingWithAnotherObj = false;
+            if (other.gameObject.CompareTag("Ground")) IsHittingTheGround = false;
+        }
     }
 
-    private void Update()
+    private void Update() 
     {
         if (IsHittingTheGround && !IsCollingWithAnotherObj) AllowDrop(true);
         else AllowDrop(false);
