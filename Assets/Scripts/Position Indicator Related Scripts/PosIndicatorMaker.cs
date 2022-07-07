@@ -20,8 +20,8 @@ public class PosIndicatorMaker : MonoBehaviour
                 _planeInstance = Instantiate(indicatorPlanePrefab);
                 _hasInstantiated = true;
             }
-            Vector3 buildingPos = _gmObj.transform.position;
-            _planeInstance.transform.position = new Vector3(buildingPos.x, distanceFromGround, buildingPos.z);
+            Vector3 objPos = _gmObj.transform.position;
+            _planeInstance.transform.position = new Vector3(objPos.x, distanceFromGround, objPos.z);
         }
         else if (_hasInstantiated)
         {

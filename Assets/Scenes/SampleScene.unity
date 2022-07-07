@@ -682,8 +682,8 @@ MonoBehaviour:
   isCollidingVar: {fileID: 1614702267}
   isCollidingWithVar: {fileID: 1882060685}
   isOnFloorVar: {fileID: 624750212}
-  XVar: {fileID: 1661391129}
-  ZVar: {fileID: 2082232931}
+  xVar: {fileID: 1661391129}
+  zVar: {fileID: 2082232931}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
