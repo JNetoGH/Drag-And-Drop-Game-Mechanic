@@ -30,15 +30,15 @@ ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\A
 activity#com.unity3d.player.UnityPlayerActivity
 ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
 	android:screenOrientation
-		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-155
+		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-148
 	android:launchMode
-		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:156-187
+		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:149-180
 	android:hardwareAccelerated
-		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:405-440
+		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:398-433
 	android:resizeableActivity
-		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:370-404
+		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:363-397
 	android:configChanges
-		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:188-369
+		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:181-362
 	android:theme
 		ADDED from C:\Users\joaom\Desktop\DEV\Unity\Projects\Drag and Drop\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
 	android:name

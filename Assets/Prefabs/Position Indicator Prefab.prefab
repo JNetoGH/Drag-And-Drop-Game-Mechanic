@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1975431489093845083}
   - component: {fileID: 973658899421360983}
   - component: {fileID: 786967544455354961}
-  - component: {fileID: -4368642934380580635}
   m_Layer: 0
   m_Name: Position Indicator Prefab
   m_TagString: Untagged
@@ -84,17 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-4368642934380580635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8416130992674866574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c09831a4abfdfff48a9f6349b9f1b948, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  greenMaterial: {fileID: 2100000, guid: c89c067bf89c482419594170fe6f50b3, type: 2}
-  redMaterial: {fileID: 2100000, guid: 8d13e4bfcdf780545903335c3699a9c0, type: 2}

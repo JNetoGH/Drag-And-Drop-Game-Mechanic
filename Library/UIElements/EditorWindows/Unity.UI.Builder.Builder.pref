@@ -66,7 +66,7 @@ MonoBehaviour:
   - '{"m_ElementInfoVisibilityState":0}'
   - '{"m_ExpandedItemIds":[]}'
   - '{"m_ShowAlternatingRowBackgrounds":0,"m_ScrollOffset":{"x":0.0,"y":0.0}}'
-  - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
+  - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":-205.0}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
   - '{"m_ShowPackageTemplates":false,"m_ViewMode":0,"m_ActiveTab":0}'
   - '{"m_SelectedItemId":0}'

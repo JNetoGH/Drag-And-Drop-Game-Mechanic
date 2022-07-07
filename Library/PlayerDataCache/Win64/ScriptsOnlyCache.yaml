@@ -3,7 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - DebuggingCanvasController
     - DragAndDropManager
-    - PosIndicatorController
+    - DraggableObjectController
     - PosIndicatorMaker
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
@@ -88,39 +88,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1702}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 1900}
+      Script: {instanceID: 1546}
     - Class: 114
-      Script: {instanceID: 2326}
+      Script: {instanceID: 1786}
     - Class: 114
-      Script: {instanceID: 2352}
+      Script: {instanceID: 2212}
     - Class: 114
-      Script: {instanceID: 2764}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2992}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 4256}
+      Script: {instanceID: 2878}
     - Class: 114
-      Script: {instanceID: 4368}
+      Script: {instanceID: 4142}
     - Class: 114
-      Script: {instanceID: 4386}
+      Script: {instanceID: 4254}
     - Class: 114
-      Script: {instanceID: 4640}
+      Script: {instanceID: 4272}
     - Class: 114
-      Script: {instanceID: 5420}
+      Script: {instanceID: 4526}
     - Class: 114
-      Script: {instanceID: 5494}
+      Script: {instanceID: 5306}
     - Class: 114
-      Script: {instanceID: 6038}
+      Script: {instanceID: 5874}
     - Class: 114
-      Script: {instanceID: 6118}
+      Script: {instanceID: 5926}
     - Class: 114
-      Script: {instanceID: 6194}
+      Script: {instanceID: 6006}
     - Class: 114
-      Script: {instanceID: 6540}
+      Script: {instanceID: 6082}
     - Class: 114
-      Script: {instanceID: 6896}
+      Script: {instanceID: 6782}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -144,16 +144,22 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UIElements
-    className: PanelRaycaster
-  - hash:
-      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UIElements
+    className: PanelRaycaster
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -234,7 +240,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerUpMessageListener
   - hash:
       serializedVersion: 2
-      Hash: a0d93d66c79b0f7011299f1b45f4bd6f
+      Hash: 079a0bacb9607b39de8feed2ae468858
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DragAndDropManager
@@ -588,7 +594,7 @@ ScriptsOnlyBuild:
     className: UnityOnJointBreak2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: b4df66c56c0330c8b16198d695856a01
+      Hash: fdd15e43958b5fc523702ffc87ea4ef7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PosIndicatorMaker
@@ -762,12 +768,6 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 2834e9c5ee1604ec26d815a3cb3a3a00
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PosIndicatorController
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro
@@ -816,6 +816,12 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DraggableObjectController
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -834,7 +840,7 @@ ScriptsOnlyBuild:
     className: AnimatorMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 15a4b0254823748af2d22baf03c61c54
+      Hash: a3e6577c919fa7d722ede093c9a32cdd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DebuggingCanvasController
@@ -862,12 +868,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: Benchmark03
-  - hash:
-      serializedVersion: 2
-      Hash: 748dd2a2a28da4e618912da5ac45684b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: StandaloneInputModule
   - hash:
       serializedVersion: 2
       Hash: f7858108331b563fb41b80b729297acd
@@ -1147,5 +1147,5 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/joaom/Desktop/DEV/Unity/Builds/Drag And Drop Windows/Draggable
-    Objects.exe
+  playerPath: C:/Users/joaom/Desktop/DEV/Unity/Builds/Drag And Drop Builds/Windows
+    v2.1/Draggable Objects.exe
